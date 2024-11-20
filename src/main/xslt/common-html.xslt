@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:com="http://cityehr/common"
-  xmlns:hcom="http://cityehr/html/common"
+  xmlns:com="http://evolvedbinary/common"
+  xmlns:hcom="http://evolvedbinary/html/common"
   exclude-result-prefixes="xs hcom"
   version="2.0">
   

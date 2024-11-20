@@ -2,9 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-  xmlns:htop="http://cityehr/html/topic"
-  xmlns:hcom="http://cityehr/html/common"
-  xmlns:com="http://cityehr/common"
+  xmlns:htop="http://evolvedbinary/html/topic"
+  xmlns:hcom="http://evolvedbinary/html/common"
+  xmlns:com="http://evolvedbinary/common"
   exclude-result-prefixes="xs hcom ditaarch"
   version="2.0">
   

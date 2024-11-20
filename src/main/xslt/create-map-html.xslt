@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  xmlns:hcom="http://cityehr/html/common"
-  xmlns:com="http://cityehr/common"
+  xmlns:hcom="http://evolvedbinary/html/common"
+  xmlns:com="http://evolvedbinary/common"
   exclude-result-prefixes="xs hcom com"
   version="2.0">
   
@@ -42,7 +42,7 @@
       <body about="">
         <div id="cover-page">
           <div id="cover-page-logo">
-            <img src="images/cityehr-logo.png"/>
+            <img src="images/evolvedbinary-logo.png"/>
           </div>
           <xsl:apply-templates select="topicmeta" mode="cover-page"/>
         </div>

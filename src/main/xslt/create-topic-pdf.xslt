@@ -3,8 +3,8 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-  xmlns:pcom="http://cityehr/pdf/common"
-  xmlns:com="http://cityehr/common"
+  xmlns:pcom="http://evolvedbinary/pdf/common"
+  xmlns:com="http://evolvedbinary/common"
   exclude-result-prefixes="xs pcom com ditaarch"
   version="2.0">
   
@@ -42,7 +42,7 @@
   <!-- PAGE HEADER -->
   <xsl:template match="topic" mode="header">
     <fo:block text-align="center" font-size="10pt">
-      <fo:block border-after-style="solid" border-after-width="0.75pt">cityEHR Quick Start Guide</fo:block>
+      <fo:block border-after-style="solid" border-after-width="0.75pt">evolvedbinary Quick Start Guide</fo:block>
     </fo:block>
   </xsl:template>
   
@@ -50,7 +50,7 @@
   <xsl:template match="topic" mode="footer">
     <fo:block text-align-last="justify" font-size="10pt" border-style="solid" border-width="0.75pt" display-align="center">
       <fo:block margin-left="8pt" margin-right="8pt">
-        <fo:inline>cityEHR Quick Start Guide</fo:inline>
+        <fo:inline>evolvedbinary Quick Start Guide</fo:inline>
         <fo:leader leader-pattern="space"/>
         <fo:inline>Page <fo:page-number/> of <fo:page-number-citation ref-id="endofdoc"/></fo:inline>
       </fo:block>

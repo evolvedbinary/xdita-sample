@@ -3,8 +3,8 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
-  xmlns:pcom="http://cityehr/pdf/common"
-  xmlns:com="http://cityehr/common"
+  xmlns:pcom="http://evolvedbinary/pdf/common"
+  xmlns:com="http://evolvedbinary/common"
   exclude-result-prefixes="xs pcom com ditaarch"
   version="2.0">
   

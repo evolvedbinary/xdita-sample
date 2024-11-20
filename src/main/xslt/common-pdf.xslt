@@ -7,8 +7,8 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:xmp="http://ns.adobe.com/xap/1.0/"
   xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
-  xmlns:pcom="http://cityehr/pdf/common"
-  xmlns:com="http://cityehr/common"
+  xmlns:pcom="http://evolvedbinary/pdf/common"
+  xmlns:com="http://evolvedbinary/common"
   exclude-result-prefixes="xs pcom com"
   version="2.0">
   
@@ -121,7 +121,7 @@
       </fo:static-content>
       <fo:flow flow-name="xsl-region-body" hyphenate="true">
         <fo:block text-align="center" margin-top="20pt">
-          <fo:external-graphic src="{com:abs-uri(., 'images/cityehr-logo.png')}" content-height="scale-to-fit" content-width="scale-to-fit" width="100%" scaling="uniform"/>
+          <fo:external-graphic src="{com:abs-uri(., 'images/evolvedbinary-logo.png')}" content-height="scale-to-fit" content-width="scale-to-fit" width="100%" scaling="uniform"/>
         </fo:block>
         <fo:block background-color="#A42420" color="#FFFFFF" text-align="right" display-align="center" margin-top="200pt" padding-top="7pt" padding-right="7pt" padding-bottom="7pt">
           <fo:block font-size="14pt"><xsl:value-of select="$title"/></fo:block>

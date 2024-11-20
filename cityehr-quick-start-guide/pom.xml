@@ -1,13 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.seveninformatics.cityehr.documentation</groupId>
-        <artifactId>cityehr-documentation-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../cityehr-documentation-parent</relativePath>
-    </parent>
-
+    <groupId>com.seveninformatics.cityehr.documentation</groupId>
+    <version>1.0.0-SNAPSHOT</version>
     <artifactId>cityehr-quick-start-guide</artifactId>
     <packaging>pom</packaging>
 
@@ -21,6 +16,9 @@
     </scm>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <saxon.version>12.5</saxon.version>
+
         <lwdita.src>src/main/lwdita/quickstart-guide-modular</lwdita.src>
         <fo.generated-resources>${project.build.directory}/generated-resources/fo</fo.generated-resources>
         <html.generated-resources>${project.build.directory}/generated-resources/html</html.generated-resources>
@@ -33,7 +31,37 @@
         <petal.referrer-base-url>https://evolvedbinary.github.io/cityehr-documentation</petal.referrer-base-url>
     </properties>
 
+
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>xml-maven-plugin</artifactId>
+                    <version>1.1.0</version>
+                    <configuration>
+                        <transformerFactory>net.sf.saxon.TransformerFactoryImpl</transformerFactory>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.sf.saxon</groupId>
+                            <artifactId>Saxon-HE</artifactId>
+                            <version>${saxon.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.4.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <resources>
             <resource>
                 <directory>src/main/lwdita</directory>

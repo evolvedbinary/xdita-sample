@@ -38,7 +38,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: cityehr-quick-start-guide/target/website/
+          path: target/website/
   deploy:
     environment:
       name: github-pages
